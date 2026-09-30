@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0;net11.0</TargetFrameworks>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Polyester</PackageId>
+    <VersionPrefix>0.0.1-alpha.2.3</VersionPrefix>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference
+      Include="..\Polyester.CodeAnalysis\Polyester.CodeAnalysis.csproj"
+      OutputItemType="Analyzer"
+      ReferenceOutputAssembly="false"
+    />
+    <ProjectReference
+      Include="..\Polyester.SourceGenerator\Polyester.SourceGenerator.csproj"
+      OutputItemType="Analyzer"
+      ReferenceOutputAssembly="false"
+    />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None
+      Include="..\Polyester.CodeAnalysis\bin\$(Configuration)\netstandard2.0\Polyester.CodeAnalysis.dll"
+      Pack="true"
+      PackagePath="analyzers/dotnet/cs"
+      Visible="false"
+    />
+    <None
+      Include="..\Polyester.SourceGenerator\bin\$(Configuration)\netstandard2.0\Polyester.SourceGenerator.dll"
+      Pack="true"
+      PackagePath="analyzers/dotnet/cs"
+      Visible="false"
+    />
+  </ItemGroup>
+</Project>

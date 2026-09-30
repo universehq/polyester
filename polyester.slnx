@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Polyester.CodeAnalysis/Polyester.CodeAnalysis.csproj" />
+    <Project Path="src/Polyester.SourceGenerator/Polyester.SourceGenerator.csproj" />
+    <Project Path="src/Polyester/Polyester.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Playground.Tests/Playground.Tests.csproj" />
+    <Project Path="tests/Polyester.UnitTests/Polyester.UnitTests.csproj" />
+  </Folder>
+</Solution>

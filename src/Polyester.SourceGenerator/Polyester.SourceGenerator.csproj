@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputItemType>Analyzer</OutputItemType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <NoWarn>$(NoWarn);RSEXPERIMENTAL006</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference
+      Include="Microsoft.CodeAnalysis.CSharp"
+      Version="5.9.0"
+      ExcludeAssets="analyzers"
+      PrivateAssets="all"
+    />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None
+      Include="$(MSBuildThisFileDirectory)AnalyzerReleases.Unshipped.md"
+      Pack="true"
+      PackagePath="\"
+    />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/universehq/polyester</RepositoryUrl>
+  </PropertyGroup>
+</Project>
