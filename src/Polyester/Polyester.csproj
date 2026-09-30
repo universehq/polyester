@@ -6,8 +6,10 @@
 
   <PropertyGroup>
     <PackageId>Polyester</PackageId>
-    <VersionPrefix>0.0.1-alpha.2.3</VersionPrefix>
+    <VersionPrefix>0.0.1-alpha.2.4</VersionPrefix>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>Strongly typed result values for C#, with success and typed error cases.</Description>
+    <Authors>$(Author)</Authors>
   </PropertyGroup>
 
   <ItemGroup>
